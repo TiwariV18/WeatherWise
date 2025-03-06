@@ -1,0 +1,161 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #F0F4F8; /* Soft light background */
+    color: #333; /* Default dark text for readability */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #1B1D2B; /* Deep dark background */
+    color: #fff; /* White text for dark theme */
+  }
+  
+  /* Light Theme */
+  body.light-theme {
+    background-color: #F0F4F8; /* Light background */
+    color: #333; /* Dark text for light theme */
+  }
+  
+  /* Weather App Container */
+  .weather-app {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, border 0.3s ease;
+    background-color: #ffffff; /* Light background */
+    text-align: center;
+  }
+  
+  /* Dark Theme Weather App Styling */
+  body.dark-theme .weather-app {
+    background: #2C3E50;
+    border: 3px solid #34495E; /* Darker border color */
+    border-radius: 30px;
+  }
+  
+  /* Weather Title */
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3498DB; /* Sky blue color for title */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* City Name Styling */
+  #city-name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f4b7b7; /* White color for city name */
+    margin-bottom: 20px;
+  }
+  
+  /* Weather Icon Styling */
+  #weather-icon img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #weather-icon img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Weather Details (Description, Temperature, etc.) */
+  p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #f4b7b7; /* White color for weather details */
+  }
+  
+  /* Input Styling */
+  #city-input {
+    font-family: 'Segoe UI', sans-serif;
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #city-input:focus {
+    border-color: #3498DB;
+    background-color: #ECF0F1;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 25px;
+    background-color: #3498DB; /* Sky blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: #2980B9;
+    transform: scale(1.05);
+  }
+  
+  /* Weather Result Section */
+  #weather-result {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  /* Morning Time Styling */
+  body.morning-time {
+    background-color: #FFFFFF; /* White background for morning */
+    color: #000; /* Black text for morning */
+  }
+  
+  .weather-app.morning-time {
+    background: #FFFAF0; /* Light background for weather app during morning */
+  }
+  
+  /* Night or Evening Time Styling (default for dark mode) */
+  body.not-morning-time {
+    background-color: #1B1D2B; /* Deep dark background */
+    color: #fff; /* White text for night/evening */
+  }
+  
+  .weather-app.not-morning-time {
+    background: #2C3E50; /* Dark background for weather app */
+  }
+  
+  /* Optional: Add some padding for smaller screen sizes */
+  @media (max-width: 480px) {
+    .weather-app {
+      padding: 20px;
+    }
+  
+    #city-input {
+      width: 100%;
+    }
+  
+    button {
+      padding: 10px 18px;
+    }
+  }
+  
+  /* Light Theme Gradient */
+  body.light-theme {
+    background: linear-gradient(135deg, #F0F4F8, #D1E3F0);
+  }
